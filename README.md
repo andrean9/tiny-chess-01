@@ -11,13 +11,12 @@ A compact chess engine in ≤4,096 bytes of Python (stdlib only).
 - **Quiescence:** Captures and promotions only; all evasions when in check;
   delta pruning.
 - **Evaluation:** Material + formula piece-square tables + bishop pair;
-  king safety switches to endgame table when material is low.
+  king table tapers from middlegame to endgame by non-pawn material.
 - **Repetition:** Game-history repetition returns draw score in search.
 
-The source is LZMA-compressed and base85-encoded to fit the size limit
-(the same technique the sunfish 4k baseline uses); `main.py` decompresses
-and executes it at startup. Deterministic: fixed node budget, no clock,
-no randomness.
+The readable source is `engine.py`; `main.py` is packed from it with the
+kit's `makefun compress` (LZMA stub, `makefun-compress/v1`) to fit the size
+limit. Deterministic: fixed node budget, no clock, no randomness.
 
 ## Protocol
 
