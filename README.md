@@ -1,5 +1,9 @@
 # Tiny Chess Engine
 
+[![make.fun](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/andrean9/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard)
+[![reward](https://make.fun/badge/tiny-chess-01/andrean9/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01)
+
 A deterministic chess engine in 3,627 bytes of Python 3.13, using only the standard library.
 
 - 0x88 board, iterative-deepening alpha-beta search, quiescence, transposition table, null-move pruning and late-move reductions.
